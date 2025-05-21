@@ -20,7 +20,7 @@ static FileInputStream fis1;
 	{
 		
 		try {
-			fis1=new FileInputStream("src\\test\\resources\\testdata\\excels\\MasterTestData.xlsx");
+			fis1=new FileInputStream("src\\test\\resources\\testdata\\excel\\MasterTestdata.xlsx");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

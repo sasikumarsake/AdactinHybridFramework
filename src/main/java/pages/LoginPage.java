@@ -2,11 +2,17 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
 	
 	//WebElements or variables
 	
+	public LoginPage()
+	{
+		//PageFactory.initElements(driver, this);
+		super();
+	}
 	
 	//we use page factory
 	// WebElement usernameTextbox =driver.findElement(By.xpath("//input[@name='username']")
