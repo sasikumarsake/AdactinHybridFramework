@@ -1,18 +1,26 @@
 package utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.formula.functions.Rows;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
-public class UtilKit {
+import base.BaseTest;
+
+public class UtilKit extends BaseTest{
 
 static FileInputStream fis1;
 	
@@ -82,6 +90,31 @@ static FileInputStream fis1;
 		return testCaseRows;
 		
 		
+	}
+	
+	public static String getScreenshot()
+	{
+		String pattern = "yyyy-MM-dd HH:mm:ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		
+		String date = simpleDateFormat.format(new Date());
+		//System.out.println(date);
+		date=date.replace(":", "-");
+		System.out.println(date);
+		
+		String screenshotFilePath=System.getProperty("user.dir")+"\\screenshots\\"+date+".png";
+		
+		File screenshotFile=new File(screenshotFilePath);
+		
+		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(srcFile, screenshotFile);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return screenshotFilePath;
 	}
 
 }

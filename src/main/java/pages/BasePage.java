@@ -64,4 +64,10 @@ public class BasePage extends BaseTest {
 		assertEquals(getTitle(), expTitle);
 		test.log(Status.PASS, "Title is matched as expected..");
 	}
+	
+	public void adactinBuild2(WebElement element)
+	{
+		waitForElementPresence(element);
+		element.click();
+	}
 }

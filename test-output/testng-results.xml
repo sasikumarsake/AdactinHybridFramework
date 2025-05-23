@@ -2,46 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-21T18:38:57 IST" name="Default suite" finished-at="2025-05-21T18:39:24 IST" duration-ms="27300">
+  <suite started-at="2025-05-23T10:09:11 IST" name="Default suite" finished-at="2025-05-23T10:09:40 IST" duration-ms="29340">
     <groups>
     </groups>
-    <test started-at="2025-05-21T18:38:57 IST" name="Default test" finished-at="2025-05-21T18:39:24 IST" duration-ms="27300">
-      <class name="regression.ValidateLoginUsingPOMDataProvider">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:regression.ValidateLoginUsingPOMDataProvider@3527942a]" started-at="2025-05-21T18:38:57 IST" name="beforeTest" finished-at="2025-05-21T18:38:57 IST" duration-ms="497" status="PASS">
+    <test started-at="2025-05-23T10:09:11 IST" name="Default test" finished-at="2025-05-23T10:09:40 IST" duration-ms="29340">
+      <class name="regression.AdactinHotelTC107">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:regression.AdactinHotelTC107@6bd61f98]" started-at="2025-05-23T10:09:11 IST" name="beforeTest" finished-at="2025-05-23T10:09:11 IST" duration-ms="510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:regression.ValidateLoginUsingPOMDataProvider@3527942a]" started-at="2025-05-21T18:38:59 IST" name="setUp" finished-at="2025-05-21T18:39:17 IST" duration-ms="18541" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:regression.AdactinHotelTC107@6bd61f98]" started-at="2025-05-23T10:09:11 IST" name="setUp" finished-at="2025-05-23T10:09:31 IST" duration-ms="19970" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void regression.ValidateLoginUsingPOMDataProvider.validateLoginTest(java.util.HashMap)]]>
+                <![CDATA[public void regression.AdactinHotelTC107.adactinHotelTestTC107()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginTest(java.util.HashMap)[pri:0, instance:regression.ValidateLoginUsingPOMDataProvider@3527942a]" started-at="2025-05-21T18:39:17 IST" name="validateLoginTest" data-provider="getTestData" finished-at="2025-05-21T18:39:19 IST" duration-ms="1593" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{expTitle=Adactin.com - Search Hotel, password=Sashikumar@47, username=Sashikumar}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="adactinHotelTestTC107()[pri:0, instance:regression.AdactinHotelTC107@6bd61f98]" started-at="2025-05-23T10:09:31 IST" name="adactinHotelTestTC107" finished-at="2025-05-23T10:09:35 IST" duration-ms="4149" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.ValidateLoginUsingPOMDataProvider@3527942a]" started-at="2025-05-21T18:39:19 IST" name="tearDown" finished-at="2025-05-21T18:39:22 IST" duration-ms="3482" status="PASS">
+        </test-method> <!-- adactinHotelTestTC107 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.AdactinHotelTC107@6bd61f98]" started-at="2025-05-23T10:09:36 IST" name="tearDown" finished-at="2025-05-23T10:09:39 IST" duration-ms="3554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportsEnd()[pri:0, instance:regression.ValidateLoginUsingPOMDataProvider@3527942a]" started-at="2025-05-21T18:39:22 IST" name="reportsEnd" finished-at="2025-05-21T18:39:24 IST" duration-ms="2006" status="PASS">
+        <test-method is-config="true" signature="reportsEnd()[pri:0, instance:regression.AdactinHotelTC107@6bd61f98]" started-at="2025-05-23T10:09:39 IST" name="reportsEnd" finished-at="2025-05-23T10:09:40 IST" duration-ms="789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportsEnd -->
-      </class> <!-- regression.ValidateLoginUsingPOMDataProvider -->
+      </class> <!-- regression.AdactinHotelTC107 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

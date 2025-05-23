@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regression.ValidateLoginUsingPOMDataProvider">
+      <class name="regression.AdactinHotelTC105">
         <methods>
           <include name="beforeTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="adactinHotelTestTC105"/>
           <include name="reportsEnd"/>
-          <include name="validateLoginTest"/>
         </methods>
-      </class> <!-- regression.ValidateLoginUsingPOMDataProvider -->
+      </class> <!-- regression.AdactinHotelTC105 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

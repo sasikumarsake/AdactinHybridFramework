@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<listeners>
+			<listener class-name="utils.MyTestNGListener" />
+		</listeners>
+		<classes>
+			<class name="regression.AdactinHotelTC104" />
+			<class name="regression.ValidateLoginUsingPOMDataProvider" />
+			<class name="regression.AdactinHotelTC103" />
+			<class name="regression.AdactinHotelTC102" />
+		</classes>
+	</test>
+</suite>
