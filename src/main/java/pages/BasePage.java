@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -70,4 +72,13 @@ public class BasePage extends BaseTest {
 		waitForElementPresence(element);
 		element.click();
 	}
+	
+	public String getTodayDate() {
+	    return LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+	}
+
+	public String getTomorrowDate() {
+	    return LocalDate.now().plusDays(1).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+	}
+
 }
