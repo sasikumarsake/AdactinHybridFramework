@@ -18,7 +18,7 @@ import utils.MyTestNGListener;
 @Listeners(MyTestNGListener.class)
 public class AdactinHotelTC112 extends BaseTest{
 	
-	@Test
+	@Test(description = "Test Case TC-108 – Verification of Total Price (Excl. GST)")
 	public void adactinHotelTestTC112()
 	{
 		LoginPage loginpage=new LoginPage();
