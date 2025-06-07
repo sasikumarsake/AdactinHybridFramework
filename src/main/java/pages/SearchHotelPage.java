@@ -93,4 +93,10 @@ public class SearchHotelPage extends BasePage {
 	public String getSelectedLocation() {
 	    return selectedLocation;
 	}
+	
+	@FindBy(xpath = "//a[contains(text(),'Booked Itinerary')]") WebElement clickMyIternarary;
+	public void clickMyIternararyButton()
+	{
+		click(clickMyIternarary);
+	}
 }

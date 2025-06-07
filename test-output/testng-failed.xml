@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regression.AdactinHotelTC115">
+      <class name="regression.AdactinHotelTC117">
         <methods>
           <include name="beforeTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="adactinHotelTestTC115"/>
+          <include name="adactinHotelTestTC117"/>
           <include name="reportsEnd"/>
         </methods>
-      </class> <!-- regression.AdactinHotelTC115 -->
+      </class> <!-- regression.AdactinHotelTC117 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

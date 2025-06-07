@@ -62,8 +62,7 @@ public class AdactinHotelTC115 extends BaseTest{
         Assert.assertFalse(bookItinerary.isHotelNameEditable(), "Hotel Name should not be editable");
         Assert.assertFalse(bookItinerary.isLocationEditable(), "Location should not be editable");
         
-        
-        
+                 
 	}
 
 }

@@ -155,11 +155,8 @@ public class BookAHotelPage extends BasePage {
 		return orderNumber;
 	}
 	
-	@FindBy(xpath = "//input[@name='my_itinerary']") WebElement clickMyIternarary;
-	public void clickMyIternararyButton()
-	{
-		click(clickMyIternarary);
-	}
+	
+	
 	
 	
 }

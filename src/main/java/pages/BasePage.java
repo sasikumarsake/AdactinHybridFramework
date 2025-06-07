@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -79,6 +80,15 @@ public class BasePage extends BaseTest {
 
 	public String getTomorrowDate() {
 	    return LocalDate.now().plusDays(1).format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+	}
+	
+	
+	
+    
+    @FindBy(xpath = "//input[@name='my_itinerary']") WebElement clickMyIternarary;
+	public void clickMyIternararyButton()
+	{
+		click(clickMyIternarary);
 	}
 
 }

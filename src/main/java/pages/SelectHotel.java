@@ -21,7 +21,7 @@ public class SelectHotel extends BasePage {
 //	    return displayedLocation.getText(); // for normal visible text
 //	}
 
-	@FindBy(xpath = "//input[@id='location_0']")
+	@FindBy(xpath = "//select[@id='location']")
 	WebElement displayedLocation;
 
 	// WebElement helloUsernameText;
